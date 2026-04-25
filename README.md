@@ -19,6 +19,19 @@ An automated grocery price monitor that turns unstructured weekly store flyers i
 - **Alerts to Discord** when a watched item hits a configurable discount threshold
 - **Syncs to Notion** so the shopping list, catalog, and deal alerts are all mobile-accessible
 
+## Architecture
+
+```mermaid
+graph LR
+    Flyers[🛒 Weekly flyers] --> Scrape[🤖 Playwright scrapers]
+    Scrape --> Normalize[🔧 SKU normalize]
+    Normalize --> History[(SQLite price history)]
+    History --> Compare{vs baseline?}
+    Compare -->|deal| Discord[💬 Discord alert]
+    Compare -->|track| Notion[📝 Notion catalog]
+    History --> Notion
+```
+
 ## Software
 
 | Layer | Tech |

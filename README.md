@@ -42,6 +42,12 @@ An automated grocery price monitor that turns unstructured weekly store flyers i
 ![Notion API](https://img.shields.io/badge/Notion_API-000000?style=flat&logo=notion&logoColor=white)
 ![Discord](https://img.shields.io/badge/Discord-5865F2?style=flat&logo=discord&logoColor=white)
 
+## Related in the AIOS Portfolio
+
+- **[BMO Discord Agent](https://github.com/mikecutillo/bmo-discord-agent)** — Discord-native family AI companion; the deal-alerts channel
+- **[AIOS](https://github.com/mikecutillo/aios)** — The host; Next.js dashboard orchestrating 16+ household and business modules
+- **[Household Digest](https://github.com/mikecutillo/household-digest)** — AI-composed daily digest pipeline; deals surface in the morning brief
+
 ---
 
 Part of the AIOS portfolio. See the [profile README](https://github.com/mikecutillo) for the full system map.
